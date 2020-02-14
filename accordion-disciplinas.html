@@ -1,0 +1,1126 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 0 10px 0 0;
+  }
+
+  .left {
+    width: 25%;
+  }
+
+  .right {
+    width: 75%;
+  }
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .accordion {
+    background:#fff;
+    color: #3F2525;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border:solid #3F2525;
+    border-width:1px 0 0px 0;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #eee;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panelinks {
+    margin-top: -1px;
+    padding: 0px 10px 30px 10px;
+    background-color: white;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .lattes{
+    background-image: url("https://raw.githubusercontent.com/anandamatos/stsaac/producao/assets/styles/img/lattes.png")
+    ;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+  }
+
+  </style>
+  </head>
+  <body>
+  <h2>FUNDAMENTOS</h2>
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>FND01</strong></div>
+  <div class="column"><strong>Estratégias e procedimentos para elaboração de projeto de pesquisa</strong></div>
+  </button>
+  <div class="panel">
+    <p>Conhecimento científico: abordagens, modalidades de pesquisa estratégias e métodos. Técnicas de pesquisa; fontes, coleta dos dados, seu tratamento para interpretação dos resultados e conclusões. Definição de problemas e seleção de projeto de pesquisa. Desenvolvimento e acompanhamento preliminar de projetos.</p>
+  <div class="column"><p><strong>Prof.:</strong></p></div>
+  <div class="column">
+   <p><span class="lattes">
+    <a href="#">Maria Luiza A.C. de Castro</a> 	</span></p>
+  <p><span class="lattes"><a href="#">Victor Mourthé Valadares</a></span></p>
+  </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Obrigatória | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>FND02</strong></div>
+  <div class="column"><strong>
+  Fundamentos em Sustentabilidade para o Ambiente Construído
+  </strong></div>
+  </button>
+  <div class="panel">
+    <p>Apresentar as inter-relações entre os princípios sustentáveis e o ambiente construído, analisando os problemas e abordagens atuais, impactos e tendências. Discute o cenário histórico dos acordos e regulamentações sobre meio ambiente e o necessário diálogo interdisciplinar sobre a qualidade do ambiente construído.
+  </p>
+  <div class="column">
+   <p><span class="lattes">
+    <a href="#">Grace Cristina R. Gutierre</a> 	</span></p>
+  <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+  </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Obrigatória | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>FND03</strong></div>
+  <div class="column"><strong>
+  Estratégias de Condicionamento Térmico de Ambientes
+  </strong></div>
+  </button>
+  <div class="panel">
+    <p>Condicionantes climáticos para o desempenho térmico de edificações; bases de dados climáticos; métodos para a ventilação natural; noções de geometria da insolação.
+  </p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a> 	</span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>FND04</strong></div>
+  <div class="column"><strong>Abordagem de Ciclo de Vida no Projeto</strong></div>
+  </button>
+  <div class="panel">
+    <p>Condicionantes climáticos para o desempenho térmico de edificações; bases de dados climáticos; métodos para a ventilação natural; noções de geometria da insolação.
+  </p>
+  <div class="column">
+    <p><span class="lattes"><a href="#">Andréa Franco Pereira</a></span></p>
+  </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>FND05</strong></div>
+  <div class="column"><strong>Análise do Ciclo de Vida Energético de Edificações</strong></div>
+  </button>
+  <div class="panel">
+    <p>Concepção estrutural e pré-dimensionamentos; Edificações e Sustentabilidade; Análise do Ciclo de Vida Energético das Edificações; Cálculo da Energia Embutida como Indicador Ambiental.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Cynara Fiedler Bremer</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>FND06</strong></div>
+  <div class="column"><strong>Cidade Sustentável
+  </strong></div>
+  </button>
+  <div class="panel">
+    <p>Apresenta a cidade como ecossistema, analisando seu sentido ampliado para área metropolitana, sob visão ecológica, e de um ecossistema incompleto e heterotrófico, dependente de áreas externas para obtenção de energia, alimentos, água e outros materiais. Aborda a necessidade de lidar com entrada de materiais para a sustentação da vida, para funcionamento como sistema urbano e consequentemente com saídas de resíduos e emissões. Com isso propicia observações sobre os impactos causados nas localizações das cidades e em todo seu grande entorno, nos quais as temperaturas, comportamento dos ventos, as chuvas, a qualidade dos solos, etc, são alterados e comprometidos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+
+
+
+  <h2>GESTÃO E PLANEJAMENTO</h2>
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>GPP01</strong></div>
+  <div class="column"><strong>Metadesign para Planejamento e Gestão de Obras</strong></div>
+  </button>
+  <div class="panel">
+    <p>Analise e modelagem da complexidade da obra através da construção de mecanismos conceituais visando o entendimento do evento de construção com abordagem sustentável em todos os sistemas de produtos, ambientes e serviços envolvidos nessa etapa. Aplicação de Metadesign para identificação de pontos de controle, metas e métricas de projetos para avaliação dos riscos de execução, de desempenho e balanço para múltiplos critérios de impacto ambiental.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Leonardo Oliveira Gomes</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>GPP02</strong></div>
+  <div class="column"><strong>Metadesign e Gestão Sustentável de Projetos</strong></div>
+  </button>
+  <div class="panel">
+    <p>Postula-se Metadesign como a modalidade mais abstrata do design, tratando-o como um diálogo que precede o projeto em si, possibilitando a construção de mecanismos conceituais que expandem o número de soluções possíveis de forma mais fluida e anterior. Sua prática no planejamento para a gestão do projeto torna o desenvolvimento mais aderente às orientações sustentáveis e de ecodesign. Mostra-se importante ferramenta para a modelagem conceitual de sistemas de produtos, ambientes e serviços sustentáveis com desenvolvimentos integrados.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Leonardo Oliveira Gomes</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>GPP03</strong></div>
+  <div class="column"><strong>Gestão dos recursos hídricos</strong></div>
+  </button>
+  <div class="panel">
+    <p>Conceito de recursos hídricos, importância e fatores a serem considerados em sua gestão. Reservatórios superficiais e subterrâneos. Águas pluviais, manejo e importância direta como recurso hídrico.  Arcabouço legal e institucional para a gestão dos recursos hídricos.  Drenagem urbana sustentável.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Cynara Fiedler Bremer</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>GPP04</strong></div>
+  <div class="column"><strong>
+  Práticas de Projeto Integrado e Gestão em Sustentabilidade
+  </strong></div>
+  </button>
+  <div class="panel">
+    <p>Proposta de desenvolvimento de ambiente construído, orientada pelo tripé Tecnologia Construtiva – Conforto – Gerenciamento de Projeto, através da análise crítica de um projeto de mundo real apresentado, propiciando a intervenção, reformulação, remodelamento e planejamento possibilitando a aplicação do conteúdo ministrado no decorrer do curso de forma orientada à conceitos sustentáveis. A disciplina será ministrada por três professores, um para cada uma das áreas abordadas, propiciando um desenvolvimento sistêmico para as atividades e práticas propostas aos alunos, que trabalharão em grupos. Dentro dos grupos o desenvolvimento será distribuído e compartilhado pelos alunos do grupo e também para os alunos dos outros grupos, simulando o desenvolvimento integrado para as abordagens propostas, objetivando a prática de propostas para a solução de problemas de forma sistêmica e integrada que possibilita a visão geral e sustentável para o desenvolvimento de ambientes construídos</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Leonardo Oliveira</a></span></p>
+      <p><span class="lattes"><a href="#">Eduardo Cabaleiro</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 45h | 3 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>GPP05</strong></div>
+  <div class="column"><strong>Pesquisa Estratégica e Sustentabilidade</strong></div>
+  </button>
+  <div class="panel">
+    <p>Conceitos. Criação de instrumentos que promovam o envolvimento de empresas e da sociedade no trabalho de constituição de um sistema sustentável. Agenda 2030. Exemplos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Maria Luiza Castro</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+
+
+  <h2>CIDADES</h2>
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID01</strong></div>
+  <div class="column"><strong>Mobilidade Urbana</strong></div>
+  </button>
+  <div class="panel">
+    <p>Planejamento de Transportes nas cidades; Mobilidade Urbana. Soluções Sustentáveis voltadas à mobilidade urbana. Exemplos práticos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Paula Gonçalves de Souza</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID02</strong></div>
+  <div class="column"><strong>Uma habitação social efetivamente sustentável</strong></div>
+  </button>
+  <div class="panel">
+    <p>Apresentar as condutas e orientações para a construção dos ambientes de habitação voltados ao abrigo seguro, à harmonia do espaço contextual, aos acessos e locais de exercícios das funções necessárias ao convívio sem conflitos, ao compartilhamento e existências das ações sociais, além dos cuidados com o desenvolvimento ambientalmente responsável. Analisar e avaliar o emprego de medidas como a individualização do controle do consumo de água, aquecimento solar, construções alternativas, etc., visando fomentar a construções de habitações sociais efetivamente sustentáveis.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Luciana Houri</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID03</strong></div>
+  <div class="column"><strong>Bioclimatologia aplicada às cidades</strong></div>
+  </button>
+  <div class="panel">
+    <p>Climatologia urbana e do urbanismo bioclimático de assentamentos construtivos urbanos, discussão teórica sobre a sustentabilidade urbana a partir da análise dos preceitos sobre forma/morfologia urbana e minimização dos impactos ambientais, redução do consumo de energia e mitigação do processo de aquecimento global.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID04</strong></div>
+  <div class="column"><strong>Os Resíduos e o impacto no meio ambiente urbano</strong></div>
+  </button>
+  <div class="panel">
+    <p>Resoluções, normas e legislação vigentes quanto à geração, transporte, descarte, reciclagem, gestão e impactos significativos causados ao meio ambiente urbano. Ações que podem contribuir significativamente para a redução dos impactos da atividade construtiva no meio ambiente. Características peculiares dos resíduos de construção e demolição (RCD), das possíveis tecnologias aplicadas, das variantes referentes aos materiais e seus resíduos peculiares e da influência da qualidade do projeto e da qualificação da mão-de-obra empregada.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID05</strong></div>
+  <div class="column"><strong>Reuso da Água nos Municípios</strong></div>
+  </button>
+  <div class="panel">
+    <p>Conceitos de reuso da água, tendência de reuso da água no Brasil e no mundo. Saúde pública, critérios e padrões de qualidade da água. Legislação brasileira sobre o reuso de água. Tecnologia do reuso da água. Sistemas de reuso de água para indústria, comércio, espaços públicos e residências. Benefícios e limitações dos sistemas de reuso de água. Pré-dimensionamento de um sistema residencial para reuso de água de chuva.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Cynara Fiedler Bremer</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID06</strong></div>
+  <div class="column"><strong>Análise do ambiente de edificações em saúde.</strong></div>
+  </button>
+  <div class="panel">
+    <p>Tecnologias aplicadas nas metodologias de análise desempenho de edificações em ambientes de saúde. Gestão de processo em atividades de saúde. Capacitação para utilização de ferramentas analíticas e melhoria do ambiente construído e das edificações de saúde.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eduardo Cabaleiro</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID07</strong></div>
+  <div class="column"><strong>Uso de resíduos na construção civil</strong></div>
+  </button>
+  <div class="panel">
+    <p>Política Nacional de Resíduos Sólidos (Lei 12305). Abordagem do potencial da cadeia produtiva da construção civil como destino de resíduos industriais e agroindustriais, bem como o manejo dos resíduos gerados no processo construtivo: resíduos industriais e práticas tradicionais de manejo, legislação ambiental, principais setores industriais geradores. Aplicação e desempenho de materiais de construção produzidos com resíduos. Práticas usuais de manejo, destinação e reciclagem de resíduo de construção e demolição</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Sofia Araújo Lima Bessa</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID08</strong></div>
+  <div class="column"><strong>Null</strong></div>
+  </button>
+  <div class="panel">
+    <p>Conceitos. Criação de instrumentos que promovam o envolvimento de empresas e da sociedade no trabalho de constituição de um sistema sustentável. Agenda 2030. Exemplos.</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID09</strong></div>
+  <div class="column"><strong>Arborização urbana e conforto térmico</strong></div>
+  </button>
+  <div class="panel">
+    <p>Ciclo da água em ambiente urbanizado; efeitos da vegetação no aquecimento local; espécies adequadas para áreas urbanas; implantação da arborização urbana; análise de casos e visitas técnicas.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID10</strong></div>
+  <div class="column"><strong>Design para questões sociais</strong></div>
+  </button>
+  <div class="panel">
+    <p>Estudo do design social e suas implicações. O papel do designer e a sua responsabilidade na sociedade. O uso do processo de design para contribuir com o bem-estar social. Aplicação dos conceitos de design para levantar questões e desenvolver projetos com a comunidade.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Glaucinei Corrêa</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID11</strong></div>
+  <div class="column"><strong>Modelagem microclimática urbana</strong></div>
+  </button>
+  <div class="panel">
+    <p>Microclima urbano; modelos micrometeorológicos bi e tridimensionais; os programas Solène Microclimat© e ENVI-Met©; modelagem de caso de estudo.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID12</strong></div>
+  <div class="column"><strong>Cidades Inteligentes (Smart Cities)</strong></div>
+  </button>
+  <div class="panel">
+    <p>BIM – Building Information Modeling, sistemas interligados de computação gráfica e banco de dados; modelagem de informação; representação da informação; ontologia; recuperação da informação; gestão da informação; sensores; análise de dados; big-data; data driven; Internet das Coisas - IoT e visualização de dados. Sistemas de informação capazes de integrar diferentes dados e, por meio da análise e visualização prover informação para melhorar a utilização e qualidade dos espaços.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Renata Baracho</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CID13</strong></div>
+  <div class="column"><strong>Psicologia Ambiental e Sustentabilidade</strong></div>
+  </button>
+  <div class="panel">
+    <p>1.  Motivação, conteúdo e abordagens em psicologia ambiental e relação com avaliação de pós-ocupação; 2. Natureza e a Natureza Humana: valores a atitudes, avaliação ambiental,  efeitos restaurativos da natureza; paisagens naturais como lugares; 3. Percepçãoa ambiental e cognição; 4. Teorias da relação comportamento-ambiente; 5.Mudando o comportamento para salvar o meio-ambiente;  6. Do ambiente físico-espacial ao desenvolvimento sustentável; 7. Gestão Ambiental</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Victor Mourthé Valadares</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+
+
+  <h2>DESIGN</h2>
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>DES01</strong></div>
+  <div class="column"><strong>Métodos e Ferramentas para Building Design</strong></div>
+  </button>
+  <div class="panel">
+    <p>Aplicação dos métodos e ferramentas para concepção em building design em um projeto rápido. Utilização de métodos rápidos de concepção e prototipagem para elaboração de um conceito e representação. A proposta é de praticar as ferramentas e técnicas apresentados na disciplina Métodos e Ferramentas para Building Design e Sustentabilidade para definir um conceito e materializar a ideia ao término da disciplina.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Marcelo Pinto</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>DES02</strong></div>
+  <div class="column"><strong>Prática do Building Design</strong></div>
+  </button>
+  <div class="panel">
+    <p>Aplicação dos métodos e ferramentas para concepção em building design em um projeto rápido. Utilização de métodos rápidos de concepção e prototipagem para elaboração de um conceito e representação. A proposta é de praticar as ferramentas e técnicas apresentados na disciplina Métodos e Ferramentas para Building Design e Sustentabildiade para definir um conceito e materializar a ideia ao término da disciplina.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Marcelo Pinto</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>DES03</strong></div>
+  <div class="column"><strong>Design de superfície</strong></div>
+  </button>
+  <div class="panel">
+    <p>Superfície. Conceitos e abordagens. Abordagens Representacional, Constitucional e Relacional. Design de Superfície. Histórico. Evolução. História da Ornamentação. O sentido da Ordem. Áreas de atuação. Superfícies aplicadas. Design de Superfície cerâmica. Módulo. Organização e Estruturação Modular</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Márcia França</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>DES04</strong></div>
+  <div class="column"><strong>Transportation Design</strong></div>
+  </button>
+  <div class="panel">
+    <p>Aborda a necessidade do desenvolvimento integrado dos veículos urbanos frente às inovações e mudanças do ambiente urbano, analisando o crescimento da demanda de lugares, a acessibilidade, os cuidados com o conforto e segurança dos usuários, as mudanças das matrizes energéticas e aplicação das novas tecnologias de criação e uso dos futuros veiculos de transporte.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Leonardo Oliveira Gomes</a></span></p>
+      <p><span class="lattes"><a href="#">Marcelo Pinto</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>DES05</strong></div>
+  <div class="column"><strong>Novos Cenários de Autonomia na Produção</strong></div>
+  </button>
+  <div class="panel">
+    <p>Demandas personalizadas na produção; análise de novas oportunidades de compartilhamento de recursos; tecnologias inovadoras: interação e  articulação; a  ação dos makers;impressão 3D; bases da programação e robótica para não-experts: fundamentos do Arduino.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Maria Luiza Castro</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+
+
+  <h2>CONFORTO AMBIENTAL E EFICIÊNCIA ENERGÉTICA E DE RECURSOS</h2>
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE01</strong></div>
+  <div class="column"><strong>Aplicações de Iluminação integrada</strong></div>
+  </button>
+  <div class="panel">
+    <p>Sistemas artificiais de iluminação e sua integração com iluminação natural como forma de contribuir para a eficiência energética em novos empreendimentos residenciais e comerciais. Cálculos para norma de desempenho, análise de eficiência energética, sistemas de controle, tipos de iluminação, etc. </p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE02</strong></div>
+  <div class="column"><strong>Etiqueta PBE Edifica - Edifícios Comerciais</strong></div>
+  </button>
+  <div class="panel">
+    <p>Contextualização da Etiquetagem e Eficiência Energética, Análise da Envoltória, do Sistema de iluminação, do Sistema de Condicionamento de Ar, classificação do edifício, Etiqueta Geral, Bonificações, Cálculo das Etiquetas com o uso da ferramenta Webprescritivo, exemplos de edifícios já etiquetados e exercícios de aplicação prática</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE03</strong></div>
+  <div class="column"><strong>Etiquetagem em edificações residenciais</strong></div>
+  </button>
+  <div class="panel">
+    <p>Programas de etiquetagem e suas aplicações em edificações residenciais. Baseada na Etiqueta PROCEL Edifica analisa e avalia desempenho sob os parâmetros de consumo energético, análise de envoltória e seu comportamento, aquecimento de água, etc. Aplicação em edifícios residenciais. Unidade Habitacional, edifícios multifamiliares, áreas de uso comum. </p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE04</strong></div>
+  <div class="column"><strong>Abordagem da NBR15575 em Ambientes</strong></div>
+  </button>
+  <div class="panel">
+    <p>Aplicação dos preceitos da norma de desempenho para análise acústica de ambientes. Exemplos práticos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+      <p><span class="lattes"><a href="#">Victor Mourthé Valadares</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE05</strong></div>
+  <div class="column"><strong>Selo LEED: aplicações</strong></div>
+  </button>
+  <div class="panel">
+    <p>Avaliação da certificação LEED para edifícios brasileiros: pré-requisitos, pontuações, classificação obtida. Estudos de caso.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Grace Cristina R. Gutierrez</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE06</strong></div>
+  <div class="column"><strong>Selo AQUA: aplicações</strong></div>
+  </button>
+  <div class="panel">
+    <p>Avaliação da certificação AQUA para edifícios brasileiros: pré-requisitos, pontuações, classificação obtida. Estudos de caso.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Grace Cristina R. Gutierrez</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE07</strong></div>
+  <div class="column"><strong>Simulação Computacional de Eficiência Energética e de desempenho térmico</strong></div>
+  </button>
+  <div class="panel">
+    <p>Introdução à avaliação de eficiência energética e desempenho térmico de edificações por Simulação Computacional. Simulação computacional no software Energy Plus e Open Studio. Eficiência energética e de desempenho térmico nas edificações: análise e dimensionamento de componentes através da simulação termoenergéticas de nível básico.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE08</strong></div>
+  <div class="column"><strong>Simulação Computacional de iluminação natural e artificial em edificações</strong></div>
+  </button>
+  <div class="panel">
+    <p>Avaliação da iluminação natural e artificial no interior das edificações por meio de software. Aplicações práticas.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE09</strong></div>
+  <div class="column"><strong>Propostas comerciais para certificação de edifícios</strong></div>
+  </button>
+  <div class="panel">
+    <p>Análise do empreendimento. Avaliação de acordo com os selos adotados. Elaboração da proposta. Cálculo de prazos e custos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE10</strong></div>
+  <div class="column"><strong>Aplicações práticas de certificação ambiental</strong></div>
+  </button>
+  <div class="panel">
+    <p>Requisitos para certificação ambiental. Aplicação prática por meio de estudo de caso.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Grace Cristina R. Gutierrez</a></span></p>
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE11</strong></div>
+  <div class="column"><strong>Simulação Computacional de Eficiência Energética e de desempenho térmico</strong></div>
+  </button>
+  <div class="panel">
+    <p>Introdução à avaliação de eficiência energética e desempenho térmico de edificações por Simulação Computacional. Simulação computacional no software Energy Plus e Open Studio. Eficiência energética e de desempenho térmico nas edificações: análise e dimensionamento de componentes através da simulação termoenergéticas de nível básico.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE12</strong></div>
+  <div class="column"><strong>Utilização e aplicação prática de software de Smart City/Smart Building</strong></div>
+  </button>
+  <div class="panel">
+    <p>Desenvolvimento de projeto em sistemas utilizando base de dados abertas – OpenData</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Renata Baracho</a></span></p>
+        <p><span class="lattes"><a href="#">José Rubens</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE13</strong></div>
+  <div class="column"><strong>Indicadores de sustentabilidade urbana</strong></div>
+  </button>
+  <div class="panel">
+    <p>Agenda 21 das cidades; NBR/ISO 37120:2017: Desenvolvimento sustentável de comunidades — Indicadores para serviços urbanos e qualidade de vida; bairros e loteamentos sustentáveis; certificações.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE14</strong></div>
+  <div class="column"><strong>Desempenho em iluminação natural</strong></div>
+  </button>
+  <div class="panel">
+    <p>Sistemas de iluminação naturais focados no desempenho e em conceitos de sustentabilidade. Vantagens de uma iluminação adequada, melhoria da qualidade da saúde, de produtividade e redução de custos através do cálculo de iluminação lateral, dimensionamento de elementos zenitais, admissão, condução, controle e distribuição da luz.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Grace Cristina R. Gutierrez</a></span></p>
+      <p><span class="lattes"><a href="#">Roberta Vieira</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>CAE15</strong></div>
+  <div class="column"><strong>Aplicabilidade da Norma NBR 15575 quanto ao desempenho térmico</strong></div>
+  </button>
+  <div class="panel">
+    <p>Zoneamento bioclimático brasileiro e recomendações da NBR-15220; desempenho térmico de componentes construtivos na NBR-15575; análise de casos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+
+  <h2>TECNOLOGIAS DE DESENVOLVIMENTO DO AMBIENTE CONSTRUIDO, DO PRODUTO E SUSTENTABILIDADE</h2>
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS01</strong></div>
+  <div class="column"><strong>Evolução Científica e Tecnológica ( A 4ª Revolução Industrial)</strong></div>
+  </button>
+  <div class="panel">
+    <p>A Quarta Revolução Industrial. Histórico. Impulsionadores: Mega tendências; Pontos de Inflexão. Impactos: Economia; Negócios; Nacional e Global; Sociedade; O indivíduo; O Caminho a seguir. A mudança profunda: setores mais atingidos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">José Rubens</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS02</strong></div>
+  <div class="column"><strong>Estruturas Tensegrity no Ambiente Construído</strong></div>
+  </button>
+  <div class="panel">
+    <p>Esforços presentes nas estruturas Tensegrity. Tensegridade e organização espacial. Exemplos clássicos. Construção de modelos.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Paulo Gustavo Von Kruger</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS03</strong></div>
+  <div class="column"><strong>Materiais e processos de fabricação</strong></div>
+  </button>
+  <div class="panel">
+    <p>Estudo dos principais materiais e processos de transformação. Análise dos Principais sistemas e processos de fabricação em Design de Produto</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Glaucinei Corrêa</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS04</strong></div>
+  <div class="column"><strong>Inovações Tecnológicas na Construção Civil - Técnicas, processos e matérias</strong></div>
+  </button>
+  <div class="panel">
+    <p>Novas tecnologias utilizadas na construção civil. Critérios para análise, seleção, desenvolvimento e implantação de novas tecnologias e processos construtivos. Eficiência e racionalização e sustentabilidade em obras. Capacidade técnica do mercado de absorver e aplicar novas técnicas na construção </p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Cynara Fiedler Bremer</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS05</strong></div>
+  <div class="column"><strong>Tipos e Aplicações de Concretos Sustentáveis</strong></div>
+  </button>
+  <div class="panel">
+    <p>Concreto como material sustentável; Durabilidade das estruturas de concreto; Meio ambiente e recursos naturais; Adições: Obtenção, tipos e propriedades; Tipos e aplicações de concretos sustentáveis; Viabilidade técnica e ambiente construído; Análise crítica de projetos de edificações em meios urbanos</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Cynara Fiedler Bremer</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS06</strong></div>
+  <div class="column"><strong>Automação de edifícios</strong></div>
+  </button>
+  <div class="panel">
+    <p>Introdução. Automação de Edifícios Residenciais. Desenvolvimento dos Sistemas de Automação. Estudo de Caso.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Flávio Hara</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS07</strong></div>
+  <div class="column"><strong>Energia Solar</strong></div>
+  </button>
+  <div class="panel">
+    <p>Fontes de Energia Renováveis e Não-renováveis. Energia Solar Fotovoltaica. Tecnologias. Aquecimento solar de água e de ambientes: coletores, reservatórios, distribuição e controle. Normas e Regulamentação. Aplicações práticas.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS08</strong></div>
+  <div class="column"><strong>Fontes Renováveis e o Futuro da Energia</strong></div>
+  </button>
+  <div class="panel">
+    <p>Aproveitamento da energia solar fotovoltaica em edifícios - cálculos de dimensionamento, estudos de caso e aplicações práticas. A tecnologia fotovoltaica integrada às edificações. O impacto de tecnologias disruptivas (geração distribuída, armazenagem de energia e internet das coisas) em um modelo de negócio consolidado.  O balanço energético mundial e a inevitável transição para uma matriz energética renovável. A viabilidade econômica das fontes renováveis.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Grace Cristina R. Gutierrez</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS09</strong></div>
+  <div class="column"><strong>Bambu Estrutural e seu uso na Arquitetura</strong></div>
+  </button>
+  <div class="panel">
+    <p>Ementa: Compreensão das características estruturais básicas da barra de bambu. Composição de barras. Restrições de uso em sistemas horizontais e verticais de aplicação. Método de análise estrutural por meio de programas computacionais para conceitos básicos de equilíbrio. Apresentação de resultados de testes de compressão e flexão em flambagem. Processo de apropriação da tecnologia em desenvolvimento econômico e social, com aspectos arquitetônicos viáveis.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Fernando José da Silva</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS10</strong></div>
+  <div class="column"><strong>Sustentabilidade e Conservação Urbana</strong></div>
+  </button>
+  <div class="panel">
+    <p>Estudos sobre Desenvolvimento Sustentável e noção de Paisagem do ponto de vista analitico e reflexivo nas relações arquitetônicas e territoriais; e suas implicações no uso e ocupação do solo urbano público ou privado, sob a ótica da conservação urbana.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Cynara Fiedler Bremer</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS11</strong></div>
+  <div class="column"><strong>Climatização em ambientes: aspectos técnicos e práticos</strong></div>
+  </button>
+  <div class="panel">
+    <p>Conceitos básicos de conforto , qualidade do ar , variáveis climáticas , humanas e arquitetônicas, calor sensível , calor latente , carga térmica . Sistemas de Condicionamento de Ar : Tipos de sistemas e impactos no projeto arquitetônico . Eficiência energética e soluções de sistemas sustentáveis .</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eleonora Sad de Assis</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS12</strong></div>
+  <div class="column"><strong>Aplicabilidade da arquitetura vernacular e de terra e as evoluções tecnológicas relacionadas</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Null</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS13</strong></div>
+  <div class="column"><strong>Prevenção e combate a incêndio: aplicações</strong></div>
+  </button>
+  <div class="panel">
+    <p>Legislação e normas brasileiras relativas à proteção contra incêndio e explosões. Programas de proteção contra incêndio. Equipamentos e sistemas de proteção contra incêndio. iluminação de emergência, portas corta-fogo, escada de emergência. Sistema de detecção e alarme. Plano de Abandono. Estudo de caso.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Paulo Gustavo Von Kruger</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS14</strong></div>
+  <div class="column"><strong>Tecnologia em sistemas de vedações verticais</strong></div>
+  </button>
+  <div class="panel">
+    <p>Características e propriedades dos sistemas de vedações verticais: alvenarias, esquadrias, placas cimentíficias, drywall, madeira reconstituída, painéis cerâmicos, etc. Desempenho dos sistemas verticais: paredes e esquadrias. Estanqueidade. Segurança estrutural. Conforto térmico e acústico. Especificações.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Sofia Araújo Lima Bessa</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS15</strong></div>
+  <div class="column"><strong>Oficina de construções com terra</strong></div>
+  </button>
+  <div class="panel">
+    <p>Rompendo a dicotomia usual entre teoria e prática esta disciplina propõe o conhecimento a partir da prática de exercícios de sensibilização como o Teste Carazas e outros, e a construção de paredes de pau-a-pique, taipa de pilão e adobe.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Marco Antônio Rezende</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>TDS16</strong></div>
+  <div class="column"><strong>A Norma de Desempenho e sua aplicação em metodologias de avaliação</strong></div>
+  </button>
+  <div class="panel">
+    <p>Apresentar as normas NBR 15575 por meio da aplicação de metodologias de avaliação e diagnósticos de análise para novos projetos, projetos de pós-ocupação ou retrofitting. Prática com ferramentas analíticas e capacitação para avaliações de melhorias nas edificações e ambiente construído visando a aplicação da norma de desempenho.</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Eduardo Cabaleiro</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 30h | 2 Créditos</p>
+  </div>
+  </div>
+
+  <h2>SEMINÁRIOS</h2>
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>S01</strong></div>
+  <div class="column"><strong>Seminário I</strong></div>
+  </button>
+  <div class="panel">
+    <p>Reunindo profissionais e pesquisadores dos diversos temas relativos à sustentabilidade nas cidades, edificações e produtos, constituirão momento de debate e reflexão sobre o campo. Serão oferecidos pelo menos a cada 1,5 anos tendo os seus temas definidos pela Comissão Coordenadora, a partir da demanda dos professores e alunos do curso, e também em articulação com a Pós-Graduação Stritu Sensu</p>
+    <div class="column">
+      <p><span class="lattes"><a href="#">Marco Antônio Rezende</a></span></p>
+      <p><span class="lattes"><a href="#">Cynara Fiedler Bremer</a></span></p>
+    </div>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks">Disc. Optativa | Carga H. 15h | 1 Créditos</p>
+  </div>
+  </div>
+
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
+  </body>
+  </html>

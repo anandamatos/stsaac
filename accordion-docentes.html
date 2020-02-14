@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 0 10px 0 0;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.accordion {
+  background:#fff;
+  color: #3F2525;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border:solid #3F2525;
+  border-width:1px 0 0px 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #eee;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panelinks {
+  margin-top: -1px;
+  padding: 0px 10px 30px 10px;
+  background-color: white;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.lattes{
+  background-image: url("https://raw.githubusercontent.com/anandamatos/stsaac/producao/assets/styles/img/lattes.png")
+  ;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+</style>
+</head>
+<body>
+<h2>DISCIPLINAS</h2>
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Alexandre de Barros Teixeira</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Null</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Andréa Franco Pereira</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND04</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Cynara Fiedler Bremer</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND05, GPP03, CID05, TDS04, TDS05, TDS10, S01.</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Edgar Vladimiro Mantilla Carrasco</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>NULL</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Cynara Fiedler Bremer</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND05, GPP03, CID05, TDS04, TDS05, TDS10, S01.</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Eduardo Cabaleiro</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: GPP04, CID06, TDS16</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Eleonora Sad de Assis</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND02, FND03, CID03, CID04, FND06, CID09, CID11, CAE04, CAE09, CAE15, TDS07, TDS11</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Érico Franco Mineiro</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Null</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Fernando José da Silva</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: TDS09</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Flávio Hara</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: TDS06</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Glaucinei Corrêa</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: CID10, TDS03</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Grace Cristina Roel Gutierrez</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND02, CAE05, CAE06, CAE10, CAE14, TDS08</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Iraci Miranda Pereira</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Null</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Laura de Souza Cota Carvalho</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Null</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Leonardo Geraldo Oliveira Gomes</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: GPP01, GPP02, GPP04, DES04</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Marcelo Silva Pinto</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: DES01, DES02, DES04</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Márcia Luiza França da Silva</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: DES03</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Marco Antonio P. Rezende</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: TDS15, S01</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Maria Luiza Almeida Cunha Castro</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND01, GPP05, DES05</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Maria Luiza Dias Viana</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Null</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Maria Teresa P. Aguilar</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Null</p>
+</div>
+</div>
+
+<div class="row">
+<button class="accordion">
+<div class="column"><strong>Paulo Gustavo Von Kruger</strong></div>
+</button>
+<div class="panel">
+  <p>Null</p>
+</div>
+<div class="panelinks">
+<p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: TDS02, TDS11</p>
+</div>
+</div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>Rejane Magiag Loura</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Null</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>Renata Maria Abrantes Baracho</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: CID12, CAE12</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>Roberta Vieira G. de Souza</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND06, CAE01, CAE02, CAE03, CAE07, CAE08, CAE09, CAE10, CAE11, CAE13, CAE14</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>Sofia Araújo Lima Bessa</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: CID07, TDS14</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>Victor Mourthé Valadares</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: FND01, CID13, CAE04</p>
+  </div>
+  </div>José Rubens Gonçalves de Souza
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>José Rubens Gonçalves de Souza</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: CAE12, TDS01</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>Luciana Houri</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: CID02</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <button class="accordion">
+  <div class="column"><strong>Paula Gonçalves de Souza</strong></div>
+  </button>
+  <div class="panel">
+    <p>Null</p>
+  </div>
+  <div class="panelinks">
+  <p class="panelinks"><span class="lattes"><a href="#">Lattes</a> </span>Disciplinas: CID01</p>
+  </div>
+  </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
